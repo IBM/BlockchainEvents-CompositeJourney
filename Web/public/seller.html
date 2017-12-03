@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blockchain Smart Contract with Events</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css"></link>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Auction Event History</a>
+        </div>
+      </div>
+    </nav>
+    <center>
+      <h3>Auctioneer View of Events</h3>
+    </center>
+    <div class="container" id="section_one">
+      <div style="overflow:auto;">
+        <table id="seller_view" style="width: 100%">
+          <thead>
+            <tr style="width: 100%">
+              <th>Transaction Type</th>
+              <th>Auctioneer</th>
+              <th>Product Id</th>
+              <th>Product Description</th>
+              <th>Listing State</th>
+              <th>Bid Amount</th>
+              <th>Bidder</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </div>
+      </table>
+    </div>
+  </body>
+</html>
+<script src="./scripts/AuctioneerTable.js"></script>
+<script src="./scripts/events.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
