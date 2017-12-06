@@ -2,8 +2,6 @@
 
 Welcome to Part 3 of the Hyperledger Composer Composite Pattern. This is a continuation of [Hyperledger Composer - Product Auction Network](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney). This pattern shows how events can be emitted by Hyperledger Composer and subscribed to by external applications.
 
-Events are defined in the model file of a business network definition, and are emitted by transaction JavaScript in the transaction processor functions file.
-
 ## Included Components
 * Hyperledger Fabric
 * Hyperledger Composer
@@ -18,9 +16,11 @@ Events are defined in the model file of a business network definition, and are e
 
 ## 1. Generate the Business Network Archive (BNA)
 
+Please install the [Hyperledger Composer Development Tools](https://github.com/IBM/BlockchainNetwork-CompositeJourney#1-installing-hyperledger-composer-development-tools).
+
 Clone the repository:
 ```
-git clone https://github.com/ibm/BlockchainEvents-CompositeJourney.git
+git clone https://github.com/IBM/BlockchainEvents-CompositeJourney.git
 ```
 
 To check that the structure of the files is valid, you can now generate a Business Network Archive (BNA) file for your business network definition. The BNA file is the deployable unit -- a file that can be deployed to the Composer runtime for execution.
