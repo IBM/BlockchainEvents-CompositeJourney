@@ -1,11 +1,21 @@
 # Hyperledger Composer - Product Auction Network With Events
 
-Welcome to Part 3 of the Hyperledger Composer Composite Pattern. This is a continuation of [Hyperledger Composer - Product Auction Network](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney). This pattern shows how events can be emitted by Hyperledger Composer and subscribed to by external applications.
+Welcome to Part 3 of the Hyperledger Composer Composite Pattern. This is a continuation of [Hyperledger Composer - Product Auction Network](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney). This pattern shows how events can be emitted by Hyperledger Composer and subscribed by external applications.
 
 ## Included Components
+
 * Hyperledger Fabric
 * Hyperledger Composer
 * Docker
+
+## Application Workflow Diagram
+
+![Workflow](images/workflow.png)
+
+* Start the Hyperledger Fabric Network
+* Generate and Deploy the Business Network Archive
+* Start and connect the composer rest server to deployed business network
+* Start the Web Application
 
 ## Steps
 
@@ -131,7 +141,27 @@ node server.js
 
 ## 4.Perform the transactions
 
-Open a web browser and navigate to  http://localhost:3000/explorer, http://localhost:8000/seller.html, http://localhost:8000/buyer.html to view the LoopBack API Explorer UI, Seller and Buyer events. Perform the transactions in auction network using the instructions in [composer section](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney#2-deploy-the-business-network-archive-using-composer-playground). Events are emitted when user perform `publishListing`, `makeoffer` and `closeBidding` transactions. Web UI for seller and buyer is updated when a new event is emitted in the Hyperledger fabric network.
+Perform the transactions in auction network using the instructions in [composer section](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney#2-deploy-the-business-network-archive-using-composer-playground). Events are emitted when user perform `publishListing`, `makeoffer` and `closeBidding` transactions. Web UI for seller and buyer updates on the event emitted from the Hyperledger fabric network.
+
+You can submit the transactions either by using Composer REST API or Composer Playground running locally.
+
+### Using Composer REST API to submit the transactions
+
+Open a web browser and navigate to  http://localhost:3000/explorer.
+
+### Using Composer Playground running locally.
+
+Open a new terminal and navigate to `BlockchainEvents` directory. Install the composer playground using:
+```
+npm i composer-playground@0.16.1
+```
+
+Run the composer playground locally using:
+```
+composer-playground
+```
+
+Navigate to http://localhost:8000/seller.html, http://localhost:8000/buyer.html to view the dashboards for Seller and Buyer events.
 
 ## Additional Resources
 * [Hyperledger Fabric Docs](http://hyperledger-fabric.readthedocs.io/en/latest/)
