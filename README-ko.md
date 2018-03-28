@@ -2,7 +2,7 @@
 
 *다른 언어로 보기: [English](README.md)*
 
-하이퍼레저 컴포저(Hyperledger Composer) Composite Journey의 Part 3에 오신 것을 환영합니다. 이 과정은 [하이퍼레저 컴포저 - 상품 경매 네트워크](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney) 시리즈 중 하나입니다. 이 과정에서는 하이퍼레저 컴포저에서 이벤트를 내보내고, 외부 애플리케이션에서 구독하는 방법을 다루게 됩니다.
+하이퍼레저 컴포저(Hyperledger Composer) Composite Journey의 Part 3에 오신 것을 환영합니다. 이 과정은 [하이퍼레저 컴포저 - 상품 경매 네트워크](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney/blob/master/README-ko.md) 시리즈 중 하나입니다. 이 과정에서는 하이퍼레저 컴포저에서 이벤트를 내보내고, 외부 애플리케이션에서 구독하는 방법을 다루게 됩니다.
 
 ## 구성 요소
 
@@ -28,7 +28,7 @@
 
 ## 1. 비즈니스 네트워크 아카이브 (BNA) 생성
 
-[하이퍼레저 컴포저 개발 툴](https://github.com/IBM/BlockchainNetwork-CompositeJourney#1-installing-hyperledger-composer-development-tools)을 설치합니다.
+[하이퍼레저 컴포저 개발 툴](https://github.com/IBM/BlockchainNetwork-CompositeJourney/blob/master/README-ko.md#1-%ED%95%98%EC%9D%B4%ED%8D%BC%EB%A0%88%EC%A0%80-%EC%BB%B4%ED%8F%AC%EC%A0%80-%EA%B0%9C%EB%B0%9C-%ED%88%B4-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0)을 설치합니다.
 
 저장소를 복제하십시오:
 ```
@@ -88,7 +88,7 @@ npm test
 
 ## 2. 로컬에서 실행되는 하이퍼레저 컴포저에 비즈니스 네트워크 아카이브 배포
 
-[instructions](https://github.com/IBM/BlockchainNetwork-CompositeJourney#2-starting-hyperledger-fabric)을 참고하여 로컬 패브릭을 시작합니다.
+[가이드](https://github.com/IBM/BlockchainNetwork-CompositeJourney/blob/master/README-ko.md#2-%ED%95%98%EC%9D%B4%ED%8D%BC%EB%A0%88%EC%A0%80-%ED%8C%A8%EB%B8%8C%EB%A6%AD-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)를 참고하여 로컬 패브릭을 시작합니다.
 이제 `product-auction.bna` 파일이 들어있는 `dist` 폴더로 디렉토리를 변경하고 다음을 입력합니다:
 ```
 cd dist
@@ -133,7 +133,7 @@ Web server listening at: http://localhost:3000
 Browse your REST API at http://localhost:3000/explorer
 ```
 
-## 3.Web UI 시작하기
+## 3. 웹 UI 시작하기
 
 새 터미널 창에서 `Web` 디렉토리로 이동하고 다음 명령을 사용하여 노드 서버를 시작합니다:
 ```
@@ -141,9 +141,9 @@ npm install
 node server.js
 ```
 
-## 4.트랜잭션 수행하기
+## 4. 트랜잭션 수행하기
 
-[컴포저 섹션](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney#2-deploy-the-business-network-archive-using-composer-playground)에 나와있는 지침에 따라 경매 네트워크에서 트랜잭션을 수행하십시오. 사용자가 `publishListing`, `makeoffer` 그리고 `closeBidding` 트랜잭션을 수행할 때에 이벤트가 발생됩니다. 하이퍼레저 패브릭 네트워크에서 발생된 이벤트로 인해 판매자 및 구매자를 위한 Web UI가 업데이트됩니다.
+[컴포저 섹션](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney/blob/master/README-ko.md#2-%EC%BB%B4%ED%8F%AC%EC%A0%80-%ED%94%8C%EB%A0%88%EC%9D%B4%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%95%84%EC%B9%B4%EC%9D%B4%EB%B8%8C-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0)에 나와있는 지침에 따라 경매 네트워크에서 트랜잭션을 수행하십시오. 사용자가 `publishListing`, `makeoffer` 그리고 `closeBidding` 트랜잭션을 수행할 때에 이벤트가 발생됩니다. 하이퍼레저 패브릭 네트워크에서 발생된 이벤트로 인해 판매자 및 구매자를 위한 Web UI가 업데이트됩니다.
 
 로컬에서 실행되는 Composer REST API 또는 Composer Playground를 사용하여 트랜잭션을 제출할 수 있습니다.
 
