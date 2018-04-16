@@ -141,6 +141,8 @@ npm install
 node server.js
 ```
 
+In your web browser, navigate to http://localhost:8000/buyer.html to see the view of the buyer or http://localhost:8000/seller.html for the view of the seller. 
+
 ## 4.Perform the transactions
 
 Perform the transactions in auction network using the instructions in [composer section](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney#2-deploy-the-business-network-archive-using-composer-playground). Events are emitted when user perform `publishListing`, `makeoffer` and `closeBidding` transactions. Web UI for seller and buyer updates on the event emitted from the Hyperledger fabric network.
