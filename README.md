@@ -6,7 +6,7 @@ Welcome to Part 3 of the Hyperledger Composer Composite Pattern. This is a conti
 
 Audience level : Intermediate Developers
 
-If you have a IBM cloud lite account, you can also use the Starter Plan for 30 days free to do this pattern.
+If you have an IBM cloud lite account, you can also use the Starter Plan for 30 days to do this pattern.
 
 ## Included Components
 
