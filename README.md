@@ -98,7 +98,7 @@ All files |        0 |        0 |        0 |        0 |                   |
 ## 2. Deploy the Business Network Archive on Hyperledger Composer running locally
 
 Please start the local Fabric using the [instructions](https://github.com/IBM/BlockchainNetwork-CompositeJourney#2-starting-hyperledger-fabric).
-Now change directory to the `dist` folder containing `product-auction.bna` file and type:
+Now change directory to the `dist` folder containing `events.bna` file and type:
 ```
 cd dist
 composer runtime install --card PeerAdmin@hlfv1 --businessNetworkName events
@@ -114,8 +114,9 @@ composer network ping --card admin@events
 You should see the the output as follows:
 ```
 The connection to the network was successfully tested: events
-	version: 0.16.0
+	version: 0.18.1
 	participant: org.hyperledger.composer.system.NetworkAdmin#admin
+	identity: org.hyperledger.composer.system.Identity#1f95efceac5421ad34d73130c8f16fbc2d29b7dce0c3425afb3b5f077242b1fc
 
 Command succeeded
 ```
@@ -164,7 +165,7 @@ Open a web browser and navigate to  http://localhost:3000/explorer.
 
 Open a new terminal and navigate to `BlockchainEvents` directory. Install the composer playground using:
 ```
-npm i composer-playground@0.16.1
+npm install -g composer-playground@0.18.1
 ```
 
 Run the composer playground locally using:
