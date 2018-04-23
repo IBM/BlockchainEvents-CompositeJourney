@@ -4,6 +4,8 @@
 
 Welcome to Part 3 of the Hyperledger Composer Composite Pattern. This is a continuation of [Hyperledger Composer - Product Auction Network](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney). This pattern shows how events can be emitted by Hyperledger Composer and subscribed by external applications.
 
+Audience level : Intermediate Developers
+
 ## Included Components
 
 * Hyperledger Fabric
@@ -12,7 +14,7 @@ Welcome to Part 3 of the Hyperledger Composer Composite Pattern. This is a conti
 
 ## Application Workflow Diagram
 
-![Workflow](images/workflow.png)
+![Workflow](images/arch-blockchain-events.png)
 
 * Start the Hyperledger Fabric Network
 * Generate and Deploy the Business Network Archive
@@ -72,18 +74,25 @@ npm test
 ```
 You should see the following output :
 ```
+
 > events@0.0.1 test /Users/ishan/Documents/demo/BlockchainEvents-CompositeJourney/Composer
-> mocha --recursive
-
-  ProductAuction - AddProduct Test
-    #BiddingProcess
-      ✓ Add the product to seller list (154ms)
-      ✓ Authorized owner should start the bidding (117ms)
-      ✓ Members bid for the product (181ms)
-      ✓ Close bid for the product (96ms)
+> nyc mocha -t 0 test/*.js
 
 
-  4 passing (2s)
+
+  #org.acme.product.auction
+    ✓ Authorized owner should start the bidding (74ms)
+    ✓ Members bid for the product (139ms)
+    ✓ Close bid for the product (175ms)
+
+
+  3 passing (2s)
+
+----------|----------|----------|----------|----------|-------------------|
+File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+----------|----------|----------|----------|----------|-------------------|
+All files |        0 |        0 |        0 |        0 |                   |
+----------|----------|----------|----------|----------|-------------------|
 ```
 
 ## 2. Deploy the Business Network Archive on Hyperledger Composer running locally
