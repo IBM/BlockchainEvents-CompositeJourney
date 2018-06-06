@@ -144,6 +144,7 @@ describe('#' + namespace, () => {
     //const factory = businessNetworkConnection.getBusinessNetwork().getFactory();
     const product = factory.newTransaction(namespace, 'AddProduct');
     product.description = 'My nice car';
+    product.productId = 'p1';
     product.owner = factory.newRelationship(namespace, 'Seller', 'daniel.selman@example.com');
     // Get the asset registry.
     await businessNetworkConnection.submitTransaction(product);
@@ -177,6 +178,7 @@ describe('#' + namespace, () => {
     const seller = await sellerRegistry.get('daniel.selman@example.com');
     var productid = seller.products[0].getIdentifier();
     const listing = factory.newTransaction(namespace, 'StartBidding');
+    listing.listingId = 'l1';
     listing.reservePrice = 50;
     listing.product = factory.newRelationship(namespace, 'Product', productid);
     await businessNetworkConnection.submitTransaction(listing);
@@ -193,6 +195,7 @@ describe('#' + namespace, () => {
     const seller = await sellerRegistry.get('daniel.selman@example.com');
     var productid = seller.products[0].getIdentifier();
     const listing = factory.newTransaction(namespace, 'StartBidding');
+    listing.listingId = 'l1';
     listing.reservePrice = 50;
     listing.product = factory.newRelationship(namespace, 'Product', productid);
     await businessNetworkConnection.submitTransaction(listing);
@@ -225,6 +228,7 @@ describe('#' + namespace, () => {
     const seller = await sellerRegistry.get('daniel.selman@example.com');
     var productid = seller.products[0].getIdentifier();
     const listing = factory.newTransaction(namespace, 'StartBidding');
+    listing.listingId = 'l1';
     listing.reservePrice = 50;
     listing.product = factory.newRelationship(namespace, 'Product', productid);
     await businessNetworkConnection.submitTransaction(listing);
