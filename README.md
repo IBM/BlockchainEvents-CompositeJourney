@@ -1,6 +1,6 @@
 # Hyperledger Composer - Product Auction Network With Events
 
-*Read this in other languages: [한국어](README-ko.md),[中国](README-cn.md)*
+*Read this in other languages: [한국어](README-ko.md),[中国](README-cn.md),[日本](README-ja.md)*
 
 Welcome to Part 3 of the Hyperledger Composer Composite Pattern. This is a continuation of [Hyperledger Composer - Product Auction Network](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney). This pattern shows how events can be emitted by Hyperledger Composer and subscribed by external applications.
 
