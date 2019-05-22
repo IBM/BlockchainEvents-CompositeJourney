@@ -2,6 +2,10 @@
 
 *Read this in other languages: [한국어](README-ko.md),[中国](README-cn.md),[日本](README-ja.md)*
 
+# WARNING: This repository is no longer maintained :warning:
+
+> This repository, which contains assets to run a Hyperledger Composer application, is not being actively maintained due to a shift to focus on Hyperledger Fabric. This repository will not be updated. The repository will be kept available in read-only mode. Refer to https://github.com/IBM/auction-events for a similar example.
+
 Welcome to Part 3 of the Hyperledger Composer Composite Pattern. This is a continuation of [Hyperledger Composer - Product Auction Network](https://github.com/IBM/BlockchainSmartContractTrading-CompositeJourney). This pattern shows how events can be emitted by Hyperledger Composer and subscribed by external applications.
 
 Audience level : Intermediate Developers
